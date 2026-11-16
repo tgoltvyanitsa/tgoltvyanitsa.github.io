@@ -1,1 +1,1 @@
-https://tgoltvyanitsa.github.io/journal/
+https://tgoltvyanitsa.github.io/
