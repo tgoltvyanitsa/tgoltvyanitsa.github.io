@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Tatyana's web dev journal</title>
-        <meta rel="author" content="Tatyana" />
-        <meta rel="description" content="Demo website put together by Tatyana to support learning of common web dev technologies, such as HTML, CSS, and JavaScript (especially JavaScript)." />
+        <meta name="author" content="Tatyana" />
+        <meta name="description" content="Demo website put together by Tatyana to support learning of common web dev technologies, such as HTML, CSS, and JavaScript (especially JavaScript)." />
         <link rel="icon" href="images/favicon.jpg" type="image/x-icon" />
     </head>
     <body>
@@ -13,7 +13,19 @@
         <p>Hi there. This website follows my progress as I re-learn and expand upon web dev technologies and more. I'm building it as I go along as an exercise in applying those concepts. Expect mistakes!</p>
         <p><strong>The state of things now:</strong> I'm digging into HTML. I have lots of ideas and aspirations, but I'll focus on one thing at a time (here, anyway).</p>
         <p><strong>What's on the horizon:</strong> CSS!</p>
-        <ul><h2>November 19, 2026</h2>
+        <h2>Noveber 22, 2026</h2>
+        <ul>
+            <li>Sent this page through the <a href="https://validator.w3.org/">W3C Markup Validation Service</a> and there were a few errors:
+                <ol>
+                    <li>I had my <em>h2</em> elements nested inside my lists, but I've now moved them outside. After skimming over <a href="https://html.spec.whatwg.org/#the-hgroup-element">4.3.7 The hgroup element</a> in WHATWG's HTML specs, I'm also under the impression that I shouldn't try to make these into <em>hgroup</em> elements, either. I'll consider tagging this whole series of entries as individual <em>section</em>s of a larger <em>article</em>...eventually (see <a href="https://html.spec.whatwg.org/#the-hgroup-element">4.3.3 The section element</a> in WHATWG's HTML specs).</li>
+                    <li>Inside one of my <em>meta</em> elements, I had used the <em>rel</em> attribute instead of the <em>name</em> attribute for information about the author (me). Same for the <em>meta</em> element to which I had added the description.</li>
+                    <li>In the entry for November 15, I had an <em>aside</em> element nested inside an unordered list, so I've moved it out.</li>
+                </ol>
+            </li>
+            <li>Otherwise, there are a number of info-level callouts that trailing slashes do nothing for void elements (primarily my <em>meta</em> and <em>link</em> elements in the <em>head</em>), though <a href="https://github.com/validator/validator/wiki/Markup-%C2%BB-Void-elements#trailing-slashes-directly-preceded-by-unquoted-attribute-values:~:text=%E2%9C%85%20I%20use%20a%20trailing%20slash%20because%20I%20like%20how%20it%20looks.">liking the way they look</a> seems to be a valid enough reason to have them there!</li>
+        </ul>
+        <h2>November 19, 2026</h2>
+        <ul>
             <li>Future features and mini-projects to add as I go along:
                 <ul>
                     <li>Color palette generator</li>
@@ -22,13 +34,17 @@
                 </ul>
             </li>
         </ul>
-        <ul><h2>November 16, 2026</h2>
+        <h2>November 16, 2026</h2>
+        <ul>
             <li>Added a link to the head for the favicon.</li>
         </ul>
-        <ul><h2>November 15, 2026</h2>
-            <li>I created a GitHub account, though I likely won't be committing all this today. The primary intent is to get this website up on GitHub Pages for now. And I suppose I'd finally get meaningfully familiar with how to commit my code and all that.</li><aside>OK, I got ahead of myself and did this anyway, but the webpage isn't showing up like I'd expect it to. I'll dedicate time to that tomorrow.<em>Update: OK, I couldn't help myself. Fixed the issue and we're calling it good for tonight.</em></aside>
+        <h2>November 15, 2026</h2>
+        <ul>
+            <li>I created a GitHub account, though I likely won't be committing all this today. The primary intent is to get this website up on GitHub Pages for now. And I suppose I'd finally get meaningfully familiar with how to commit my code and all that.</li>
         </ul>
-        <ul><h2>November 14, 2026</h2>
+        <aside>OK, I got ahead of myself and did this anyway, but the webpage isn't showing up like I'd expect it to. I'll dedicate time to that tomorrow. <em>Update:</em> OK, I couldn't help myself. Fixed the issue and we're calling it good for tonight.</aside>
+        <h2>November 14, 2026</h2>
+        <ul>
             <li>I'm starting here with Mozilla's <a href="https://developer.mozilla.org/en-US/curriculum/about-curriculum/">MDN front-end develoment curriculum.</a></li>
             <li>Today, I created this HTML homepage in Visual Studio Code from memory to see how well I could recall the essential components of a basic webpage.<aside>To be fair, I've been practicing throughout the week elsewhere.</aside>
             <!-- At the time I added this entry, I didn't recall how to add nested list elements. A quick search the following day reminded me that I'd need to add *another* <ul> element inside my existing <ul> element. -->
@@ -37,9 +53,11 @@
             </ul>
             <li>I'm using this webpage like a journal. Once I get into forms and JavaScript, I'll add some functionality to allow me to submit entries directly from the page itself.</li>
         </ul>
-        <ol><h2>An informal list of resources and references:</h2>
+        <h2>An informal list of resources and references:</h2>
+        <ol>
             <li><a href="https://developer.mozilla.org/en-US/curriculum/">MDN front-end development curriculum</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 criteria</a></li>
+            <li><a href="https://validator.w3.org/">W3C Markup Validation Service</a></li>
         </ol>
         <footer>&copy; 2026 Tatyana Goltvyanitsa. All rights reserved.</footer>
     </body>
